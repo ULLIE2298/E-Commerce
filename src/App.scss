@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+// font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap');
+// font-family: 'Abhaya Libre', serif;
+$mainColor1: #DEEFB7;
+$mainColor2: #98DFAF;
+$mainColor3: #5FB49C;
+$lightGrey: #ebebeb;
+$darkGrey: #787878;
+$mainDarkGrey: #666567;
+$mainFont: 'Poppins', sans-serif;
+$secondFont: 'Abhaya Libre', sans-serif;
+
+@mixin flexCenter($direction, $content, $items){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin font($fontName){
+    font-family: $fontName;
+}
+
+@import './sass/nav';
+@import './sass/home';
+@import './sass/footer';
+@import './sass/product';
+@import './sass/cart';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    background-color: $lightGrey;
+}

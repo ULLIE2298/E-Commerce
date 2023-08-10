@@ -1,0 +1,36 @@
+.footer-section {
+  @include flexCenter(column, space-between, left);
+  background-color: $mainColor1;
+  margin-top: 15vh;
+  height: 20rem;
+  padding: 2vh 0;
+}
+
+.footer-container {
+  @include flexCenter(row, space-evenly, center);
+}
+
+.footer-links {
+  @include flexCenter(column, none, left);
+  height: 20vh;
+}
+.footer-links h3 {
+  color: $mainColor3;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+.footer-links h4 {
+  margin-bottom: 1vh;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer {
+  @include flexCenter(row, space-evenly, center);
+  width: 74%;
+}
+
+.social {
+  @include flexCenter(row, space-evenly, left);
+  width: 250px;
+}

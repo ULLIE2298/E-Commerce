@@ -1,0 +1,104 @@
+.Cart{
+    @include flexCenter(row, space-between, none);
+    padding: 5vh 5vw;
+    background: $lightGrey;
+    height: 91.4vh;
+    overflow-y:scroll;
+}
+.cart-product{
+    width: 100%;
+    height: 20vh;
+    @include flexCenter(row, space-between, left); 
+}
+.item{
+    @include flexCenter(row, space-evenly, center);
+    background: white;
+    width: 60vw;
+    height: 10rem;
+    border-radius: 10px;
+}
+.item img{
+    width: 100px;
+    border-radius: 8px;
+}
+.item-text{
+    color: $darkGrey;
+    text-align: center;
+    width: 14vw;
+}
+.item-text h2{
+    color: $mainColor3;
+}
+.item select{
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.qty{
+    @include flexCenter(row, space-evenly, center);
+    width: 150px;
+}
+.qty h3{
+    margin-right: 10px;
+}
+.qty button{
+    padding: auto;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #D9D9D9;
+    text-align: center;
+    cursor: pointer;
+}
+.qty h4{
+    margin: 0 10px;
+}
+.delete{
+    background-color: #B45F5F;
+    font-size: 20px;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete:hover{
+    background-color: #894848;
+}
+
+// total========
+.total{
+    background-color: white;
+    height: 14rem;
+    width: 15vw;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0em 0.8em 1em rgba(0, 0, 0, 0.136);
+}
+.total hr{
+    width: 10vw;
+    margin: 2vw auto;
+}
+
+.total .top{
+    @include flexCenter(row, space-between, left);
+}
+.left-top{
+    color: #003E97;
+}
+
+.right-top{
+    text-align: right;
+    color: $darkGrey;
+}
+
+.bottom{
+    @include flexCenter(row, space-between, left);
+    color: $darkGrey;
+}
+.left-bottom{
+    color: black;
+}

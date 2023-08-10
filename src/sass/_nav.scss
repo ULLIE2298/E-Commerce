@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  background-color: $mainColor1;
+  @include font($mainFont);
+  height: 5rem;
+}
+
+.navbar li {
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: $mainColor3;
+}
+
+.navbar-container {
+  width: 100vw;
+  @include flexCenter(row, space-between, center);
+  padding: 0 12%;
+}
+
+.navRight {
+  @include flexCenter(row, space-between, center);
+  width: 20rem;
+}
+
+.navLinks {
+  @include flexCenter(row, space-evenly, center);
+  width: 60%;
+}
+
+.shopAndCart {
+  @include flexCenter(row, space-evenly, center);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  width: 6rem;
+  height: 3rem;
+  position: relative;
+}
+.shopAndCart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 3.5rem;
+  left: 0;
+  border-bottom: 1px solid black;
+}
+
+.cart {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 5px;
+}
+
+.trolly {
+  @include flexCenter(row, center, center);
+}
